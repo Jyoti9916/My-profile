@@ -8,14 +8,18 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0 20px;
-      background: #f9f9f9;
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8e5f99f2e4?auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
     }
     header, section {
       max-width: 900px;
       margin: auto;
-      padding: 20px 0;
+      background: rgba(255, 255, 255, 0.93);
+      padding: 30px 25px;
+      border-radius: 8px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
     }
     h1, h2 {
       color: #2c3e50;
@@ -32,14 +36,28 @@
       margin: 5px 0;
     }
     img {
-      max-width: 300px;
+      max-width: 100%;
       height: auto;
       display: block;
       margin-top: 10px;
+      border-radius: 5px;
     }
     ul {
       list-style-type: disc;
       padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+    }
+    footer h2 {
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: #00bfff;
     }
   </style>
 </head>
@@ -64,27 +82,26 @@
   </section>
 
   <section class="section">
-   <h2>My Resume</h2>
-   <p><a href="resume.pdf" class="resume-link" target="_blank">📄 Click here to view/download my resume</a></p>
-   <img src="profile.jpg" alt="Jyoti Achari Photo">
- </section>
+    <h2>My Resume</h2>
+    <p><a href="resume.pdf" class="resume-link" target="_blank">📄 Click here to view/download my resume</a></p>
+    <img src="profile.jpg" alt="Jyoti Achari Photo">
+  </section>
 
   <section class="section">
     <h2>Summary</h2>
     <p>A highly motivated and proactive individual with a strong passion for technology and recent certification in DevOps. Seeking an entry-level role in DevOps or IT Support to apply my technical skills, problem-solving abilities, and customer service experience. Committed to contributing to organizational success by delivering efficient, reliable, and scalable technical solutions through collaboration and continuous learning.</p>
   </section>
 
-<section class="section">
-  <h2>Certifications</h2>
-  <ul>
-    <li>AWS Solutions Architect – Micro Degree</li>
-    <img src="AWS-SOLUTION-ARCHITECT.jpg" alt="AWS Solutions Architect Certificate" width="400">
+  <section class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Solutions Architect – Micro Degree</li>
+      <img src="AWS-SOLUTION-ARCHITECT.jpg" alt="AWS Solutions Architect Certificate" width="400">
 
-    <li>DevOps Course Completion – Micro Degree</li>
-    <img src="DEVOPS-ENGINEER.jpg" alt="DevOps Engineer Certificate" width="400">
-  </ul>
-</section>
-
+      <li>DevOps Course Completion – Micro Degree</li>
+      <img src="DEVOPS-ENGINEER.jpg" alt="DevOps Engineer Certificate" width="400">
+    </ul>
+  </section>
 
   <section class="section">
     <h2>Technical Skills</h2>
@@ -123,6 +140,13 @@
       <li><strong>Streamlined DevOps Pipeline:</strong> CI/CD using Git, Jenkins, Ansible, and Docker</li>
     </ul>
   </section>
+
+  <footer>
+    <h2>Thanks for Visiting!</h2>
+    <p>Want to work together, or just say hello? Let’s connect! 👋</p>
+    <p><a href="mailto:jyotina097@gmail.com">jyotina097@gmail.com</a> | <a href="https://www.linkedin.com/in/jyotigbl" target="_blank">LinkedIn</a></p>
+    <p>— Jyoti Achari 🌟</p>
+  </footer>
 
 </body>
 </html>
