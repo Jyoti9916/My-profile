@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,18 +39,19 @@
       display: inline-block;
       margin: 5px 0;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
     .profile-image {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
       margin: 20px auto;
-      background-image: url('profile.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      pointer-events: none;
-      -webkit-user-drag: none;
     }
     ul {
       list-style-type: disc;
@@ -67,23 +69,17 @@
     }
     .certificate-image {
       width: 100%;
-      height: 280px;
+      height: auto;
       max-width: 400px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
       margin: 10px 0;
-      border-radius: 8px;
-      pointer-events: none;
-      -webkit-user-drag: none;
     }
-
+    
     @media (max-width: 768px) {
       header, section {
         margin: 15px;
         padding: 15px;
       }
-      .profile-image {
+      img.profile-image {
         width: 120px;
         height: 120px;
       }
@@ -100,7 +96,7 @@
 
   <section class="section">
     <h2>Welcome to My Portfolio!</h2>
-    <div class="profile-image"></div>
+    <img src="profile.jpg" alt="Jyoti Achari Photo" class="profile-image">
     <p>With 6 years of experience as a Test Engineer and hands-on expertise in Cloud and DevOps engineering, I bring a unique combination of quality assurance and infrastructure automation skills. I’m passionate about building reliable, scalable systems and continuously improving through learning and innovation.</p>
     <p>Below, you’ll find a showcase of my projects, certifications and professional achievements.</p>
   </section>
@@ -121,17 +117,18 @@
     <p>A highly motivated and proactive individual with a strong passion for technology and recent certification in DevOps. Seeking an entry-level role in DevOps or IT Support to apply my technical skills, problem-solving abilities, and customer service experience. Committed to contributing to organizational success by delivering efficient, reliable, and scalable technical solutions through collaboration and continuous learning.</p>
   </section>
 
-<section class="section">
-  <h2>Certifications</h2>
-  <ul>
-    <li>AWS Solutions Architect – Micro Degree</li>
-    <iframe src="certificates/aws-certificate.pdf" width="100%" height="500px" style="border: none;"></iframe>
+  <section class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Solutions Architect – Micro Degree</li>
+      <p><a href="AWS SOLUTION ARCHITECT.jpg" class="certificate-image" target="_blank">📄 Click here to view certificate</a></p>
+      
 
-    <li>DevOps Engineer – Micro Degree</li>
-    <iframe src="certificates/devops-certificate.pdf" width="100%" height="500px" style="border: none;"></iframe>
-  </ul>
-</section>
-
+      <li>DevOps Course Completion – Micro Degree</li>
+      <p><a href="DEVOPS ENGINEER.jpg" class="certificate-image" target="_blank">📄 Click here to view certificate</a></p>
+      
+    </ul>
+  </section>
 
   <section class="section">
     <h2>Technical Skills</h2>
@@ -143,7 +140,7 @@
       <li><strong>Containers:</strong> Docker</li>
       <li><strong>OS:</strong> Linux (Ubuntu, CentOS), Windows</li>
       <li><strong>Monitoring:</strong> AWS CloudWatch (Basic understanding)</li>
-      <li><strong>IT Support:</strong> Troubleshooting, Ticketing Systems (Zoho, Jira)</li>
+      <li><strong>IT Support:</strong> Troubleshooting, Ticketing Systems </li>
     </ul>
   </section>
 
@@ -177,15 +174,6 @@
     <p><a href="mailto:jyotina097@gmail.com">jyotina097@gmail.com</a> | <a href="https://www.linkedin.com/in/jyotigbl" target="_blank">LinkedIn</a></p>
     <p>— Jyoti Achari 🌟</p>
   </footer>
-
-  <script>
-    // Disable right-click on images
-    document.addEventListener('contextmenu', function (e) {
-      if (e.target.tagName === 'IMG' || e.target.classList.contains('certificate-image') || e.target.classList.contains('profile-image')) {
-        e.preventDefault();
-      }
-    });
-  </script>
 
 </body>
 </html>
